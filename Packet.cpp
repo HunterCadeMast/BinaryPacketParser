@@ -2,6 +2,8 @@
 #include <vector>;
 #include <string>;
 
+// Allocates onto stack adn treates memory as raw bytes to serialize.
+
 std::vector<uint8_t> serializePacket(uint8_t type, const std::string& data) {
     std::vector<uint8_t> bytes;
     PacketHeader hdr;
